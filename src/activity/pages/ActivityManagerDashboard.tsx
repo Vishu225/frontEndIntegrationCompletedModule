@@ -489,7 +489,7 @@ export default function ActivityManagerDashboard() {
       )}
 
       {activeTab === TABS.COMPLETION && (
-        <div className="prod-card animate__animated animate__fadeIn">
+        <div className="prod-card animate__animated animate__fadeIn" style={{padding:"15px"}}>
           <div className="d-flex justify-content-between align-items-center mb-3">
             <h2
               className="fw-bold mb-0"

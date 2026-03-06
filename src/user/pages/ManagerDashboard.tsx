@@ -7,11 +7,18 @@ export default function ManagerDashboard(): JSX.Element {
   const navigate = useNavigate();
 
   const actions = [
+    // {
+    //   icon: "bi-check2-circle",
+    //   label: "Pending Approvals",
+    //   desc: "Review and approve employee program enrollments.",
+    //   path: "/manager/activity",
+    //   color: "#44b37e",
+    // },
     {
       icon: "bi-check2-circle",
       label: "Pending Approvals",
       desc: "Review and approve employee program enrollments.",
-      path: "/activity/manager",
+      path: "/manager/activities",
       color: "#44b37e",
     },
     {
@@ -52,7 +59,10 @@ export default function ManagerDashboard(): JSX.Element {
   ];
 
   return (
-    <div className="main-content animate__animated animate__fadeIn" style={{margin:"0px auto"}}>
+    <div
+      className="main-content animate__animated animate__fadeIn"
+      style={{ margin: "0px auto" }}
+    >
       <div className="page-header mb-4">
         <h1 className="page-title">
           <i

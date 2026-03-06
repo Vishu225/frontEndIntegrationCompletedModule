@@ -144,6 +144,7 @@ export default function App() {
           </ProtectedRoute>
         }
       />
+
       <Route
         path="/manager/activity"
         element={
@@ -154,6 +155,18 @@ export default function App() {
           </ProtectedRoute>
         }
       />
+
+      <Route
+        path="/manager/activities"
+        element={
+          <ProtectedRoute allowedRoles={["MANAGER"]}>
+            <AppLayout>
+              <ActivityManagerDashboard />
+            </AppLayout>
+          </ProtectedRoute>
+        }
+      />
+
       <Route
         path="/manager/challenges"
         element={
@@ -212,12 +225,22 @@ export default function App() {
           <ProtectedRoute allowedRoles={["EMPLOYEE"]}>
             <AppLayout>
               {/* <ActivityGoalsPage /> */}
-              <GoalPage/>
+              <GoalPage />
             </AppLayout>
           </ProtectedRoute>
         }
       />
 
+      <Route
+        path="/employee/programs"
+        element={
+          <ProtectedRoute allowedRoles={["EMPLOYEE"]}>
+            <AppLayout>
+              <ActivityEmployeeDashboard />
+            </AppLayout>
+          </ProtectedRoute>
+        }
+      />
       {/* ── Shared routes (multiple roles) ───────────────────────────── */}
       <Route
         path="/survey"

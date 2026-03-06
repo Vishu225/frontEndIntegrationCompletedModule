@@ -11,7 +11,7 @@ export default function EmployeeDashboard(): JSX.Element {
       icon: "bi-collection-fill",
       label: "Programs",
       desc: "Browse and enroll in wellness programs.",
-      path: "/activity/employee",
+      path: "/employee/programs",
       color: "#4a90d9",
     },
     {

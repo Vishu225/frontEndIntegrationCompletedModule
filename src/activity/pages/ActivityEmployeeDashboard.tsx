@@ -185,7 +185,7 @@ function OngoingProgramCard({
   };
 
   return (
-    <div className="prod-card mb-3">
+    <div className="prod-card mb-3" style={{padding:"15px", margin:"10px"}}>
       <div className="d-flex justify-content-between align-items-start flex-wrap gap-3">
         <div>
           <div className="d-flex gap-2 align-items-center mb-1">
@@ -836,7 +836,7 @@ export default function ActivityEmployeeDashboard() {
               {completedActivities.map((a) => (
                 <div
                   key={a.activityId ?? a.programId}
-                  className="col-12 col-md-6 col-lg-4"
+                  className="col-12 col-md-6 col-lg-4" style={{padding:"15px"}}
                 >
                   <div className="prod-card h-100" style={{ margin: 0 }}>
                     <div className="prod-card-header">
